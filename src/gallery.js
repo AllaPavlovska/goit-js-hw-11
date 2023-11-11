@@ -45,7 +45,6 @@ export function displayImages(images, gallery, currentPage, perPage, loadMoreBut
     Notiflix.Notify.info("We're sorry, but you've reached the end of search results.");
   } else {
     loadMoreButton.style.display = 'block';
-    currentPage++;
   }
 }
 
@@ -90,5 +89,3 @@ export function createImageCard(image) {
 
   return card;
 }
-
-

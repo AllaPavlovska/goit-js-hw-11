@@ -1,4 +1,4 @@
-// app.js
+
 import Notiflix from 'notiflix';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
@@ -23,7 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
   loadMoreButton.addEventListener('click', function () {
     const searchQuery = form.searchQuery.value;
     fetchImages(searchQuery, currentPage, perPage, lightbox, gallery, loadMoreButton);
+    currentPage++;
   });
 });
+
 
 
