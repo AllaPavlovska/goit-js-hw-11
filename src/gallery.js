@@ -1,7 +1,7 @@
 
 import axios from 'axios';
 import Notiflix from 'notiflix';
-
+import { createImageCard } from './gallery';
 export async function fetchImages(query, currentPage, perPage, lightbox, gallery, loadMoreButton) {
   const API_URL = 'https://pixabay.com/api/';
   const API_KEY = '40576419-28b6c5efeaf1f3d7724b485b7';
